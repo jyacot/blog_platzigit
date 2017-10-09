@@ -4,4 +4,4 @@
 
 ### Como podrían ser comprobados estos cambios?
 
-### Se añadieron nuevas librerías u dependencias? Cuales?q
+### Se añadieron nuevas librerías u dependencias? Cuales?
