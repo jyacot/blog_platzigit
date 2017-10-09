@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./bower_components/materialize/dist/css/materialize.min.css">
+
+    <title>Modelo de Blog Jyacot</title>
+
+</head>
+<body>
+<nav>
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Yaclog</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <div class="row">
+        <h3>Mi perfíl en Platzi</h3>
+        <iframe
+                src="//platzi.com/@jyacot"
+                frameborder="0"
+                class="col s12 platzi"
+                onload="cargado()"
+                style="visibility: hidden"
+        >
+
+        </iframe>
+    </div>
+</div>
+
+<script src="./bower_components/jquery/dist/jquery.min.js"></script>
+<script src="./bower_components/materialize/dist/js/materialize.min.js"></script>
+<script>
+    var cargado = function(){
+        var altura = $(window).height();
+        $(".platzi").height(altura*0.75);
+        $(".platzi").css("visibility","visible")
+    }
+</script>
+</body>
+</html>
